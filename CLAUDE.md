@@ -105,3 +105,10 @@ See GitHub Issues for current work items. Key ones:
 - #4: Add monthly grant database refresh automation
 - #5: Build supporter re-engagement campaign automation
 - #6: Add Bringing-money-into-the-movement strategic frameworks
+
+Speciesist language scan:
+```bash
+semgrep --config semgrep-no-animal-violence.yaml .
+```
+
+All PRs must pass CI before merge.
