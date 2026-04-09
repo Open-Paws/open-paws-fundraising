@@ -161,7 +161,7 @@ def analyze_donors(
     try:
         predictor.load("models/")
     except FileNotFoundError:
-        logger.info("No trained model found; using rules-based fallback for org %s", org_id)
+        logger.info("No trained model found; using rules-based fallback")
 
     donors = []
     for rec in request.donors:

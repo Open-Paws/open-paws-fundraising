@@ -22,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install desloppify
-        run: pip install "git+https://github.com/Open-Paws/desloppify.git#egg=desloppify[full]"
+        run: pip install "desloppify[full] @ git+https://github.com/Open-Paws/desloppify.git"
 
       - name: Run desloppify scan
         run: |
