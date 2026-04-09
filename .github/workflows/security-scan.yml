@@ -35,12 +35,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Configure git credentials for private submodules
-        run: git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
-
       - name: Install open-paws-ai-security
         run: |
-          pip install git+https://github.com/Open-Paws/open-paws-ai-security.git
+          git clone --depth 1 --no-recurse-submodules https://github.com/Open-Paws/open-paws-ai-security.git /tmp/opaws-ai-security
+          pip install /tmp/opaws-ai-security
 
       - name: Run security scan
         id: scan

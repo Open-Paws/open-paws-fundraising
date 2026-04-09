@@ -21,11 +21,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Configure git credentials for private submodules
-        run: git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
-
       - name: Install desloppify
-        run: pip install "desloppify[full] @ git+https://github.com/Open-Paws/desloppify.git"
+        run: |
+          git clone --depth 1 --no-recurse-submodules https://github.com/Open-Paws/desloppify.git /tmp/desloppify
+          pip install "/tmp/desloppify[full]"
 
       - name: Run desloppify scan
         run: |
