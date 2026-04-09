@@ -28,8 +28,8 @@ jobs:
 
       - name: Run desloppify scan
         run: |
-          desloppify scan --path .
-          desloppify next --ci
+          desloppify scan --path . --profile ci
+          desloppify next
         env:
           DESLOPPIFY_MIN_SCORE: "85"
 

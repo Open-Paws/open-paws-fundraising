@@ -45,8 +45,8 @@ jobs:
         env:
           PYTHONPATH: /tmp/opaws-ai-security
         run: |
-          python -m src.scanner.pipeline \
-            --target . \
+          cd /tmp/opaws-ai-security && python -m src.scanner.pipeline \
+            --target ${{ github.workspace }} \
             --ci \
             --fail-on ${{ inputs.fail_on || 'HIGH' }}
         continue-on-error: true
