@@ -1,7 +1,7 @@
 """
 FastAPI server for the fundraising intelligence platform.
 
-All endpoints require X-Org-ID header for coalition partner isolation.
+All endpoints require X-API-Key header authenticated against FUNDRAISING_API_KEYS.
 No cross-org data access is possible — all queries are scoped to org_id.
 
 Endpoints:
@@ -19,6 +19,7 @@ Endpoints:
 from __future__ import annotations
 
 import logging
+import os
 from typing import Optional
 
 from fastapi import Depends, FastAPI, Header, HTTPException, status
@@ -26,6 +27,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 logger = logging.getLogger(__name__)
+
+# Format: "key1:org_id_1,key2:org_id_2"
+FUNDRAISING_API_KEYS: dict[str, str] = {
+    k: v for k, v in (
+        entry.split(":", 1) for entry in
+        os.environ.get("FUNDRAISING_API_KEYS", "").split(",") if ":" in entry
+    )
+}
 
 app = FastAPI(
     title="Open Paws Fundraising Intelligence API",
@@ -47,18 +56,20 @@ app.add_middleware(
 
 # ── Org authentication ────────────────────────────────────────────────────────
 
-def require_org_id(x_org_id: str = Header(..., description="Coalition partner org identifier")) -> str:
+def require_api_key(x_api_key: str = Header(None)) -> str:
     """
-    Extract org_id from X-Org-ID header.
+    Validate X-API-Key header and return the mapped org_id.
 
-    All endpoints are scoped to this org_id — no cross-org data access is possible.
+    Keys are configured via FUNDRAISING_API_KEYS env var (format: key1:org_id_1,key2:org_id_2).
+    All endpoints are scoped to the resolved org_id — no cross-org data access is possible.
     """
-    if not x_org_id or len(x_org_id) < 3:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="X-Org-ID header is required and must be at least 3 characters.",
-        )
-    return x_org_id
+    if not x_api_key or x_api_key not in FUNDRAISING_API_KEYS:
+        raise HTTPException(status_code=401, detail="Invalid or missing API key")
+    return FUNDRAISING_API_KEYS[x_api_key]  # returns org_id
+
+
+def require_org(org_id: str = Depends(require_api_key)) -> str:
+    return org_id
 
 
 # ── Request/response models ───────────────────────────────────────────────────
@@ -133,7 +144,7 @@ def health_check() -> dict:
 @app.post("/donors/analyze", tags=["donors"])
 def analyze_donors(
     request: DonorAnalyzeRequest,
-    org_id: str = Depends(require_org_id),
+    org_id: str = Depends(require_org),
 ) -> dict:
     """
     Run churn prediction on a batch of donor records.
@@ -200,7 +211,7 @@ def analyze_donors(
 @app.get("/donors/at-risk", tags=["donors"])
 def get_at_risk_donors(
     limit: int = 50,
-    org_id: str = Depends(require_org_id),
+    org_id: str = Depends(require_org),
 ) -> dict:
     """
     Return a placeholder response. In production, this reads from your CRM
@@ -223,7 +234,7 @@ def get_at_risk_donors(
 @app.post("/grants/match", tags=["grants"])
 def match_grants(
     request: GrantMatchRequest,
-    org_id: str = Depends(require_org_id),
+    org_id: str = Depends(require_org),
 ) -> dict:
     """
     Match the org profile against the grant database.
@@ -252,13 +263,13 @@ def match_grants(
 @app.post("/grants/draft", tags=["grants"])
 def draft_grant_application(
     request: GrantDraftRequest,
-    org_id: str = Depends(require_org_id),
+    org_id: str = Depends(require_org),
 ) -> dict:
     """
     Generate a grant application draft for a matched grant.
 
     Returns LOI, executive summary, program narrative outline, and budget narrative.
-    Requires ANTHROPIC_API_KEY environment variable.
+    Requires OPEN_PAWS_API_KEY environment variable.
     """
     import json
     from pathlib import Path
@@ -289,7 +300,7 @@ def draft_grant_application(
 
 
 @app.get("/grants/pipeline", tags=["grants"])
-def get_grant_pipeline(org_id: str = Depends(require_org_id)) -> dict:
+def get_grant_pipeline(org_id: str = Depends(require_org)) -> dict:
     """Return the current grant application pipeline for this org."""
     from src.grants.tracker import GrantTracker
 
@@ -309,7 +320,7 @@ def get_grant_pipeline(org_id: str = Depends(require_org_id)) -> dict:
 @app.post("/grants/pipeline", tags=["grants"])
 def add_to_pipeline(
     request: PipelineAddRequest,
-    org_id: str = Depends(require_org_id),
+    org_id: str = Depends(require_org),
 ) -> dict:
     """Add a grant application to the pipeline tracker."""
     from src.grants.tracker import GrantTracker
@@ -333,7 +344,7 @@ def add_to_pipeline(
 def update_pipeline_status(
     application_id: int,
     request: PipelineUpdateRequest,
-    org_id: str = Depends(require_org_id),
+    org_id: str = Depends(require_org),
 ) -> dict:
     """Update the status of a grant application."""
     from src.grants.tracker import ApplicationStatus, GrantTracker
@@ -362,7 +373,7 @@ def update_pipeline_status(
 @app.post("/forecast/revenue", tags=["forecasting"])
 def revenue_forecast(
     request: ForecastRequest,
-    org_id: str = Depends(require_org_id),
+    org_id: str = Depends(require_org),
 ) -> dict:
     """
     Generate a 12-month revenue forecast from historical monthly donation totals.

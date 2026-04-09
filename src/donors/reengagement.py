@@ -9,7 +9,8 @@ Three tone options:
 - URGENT_NEED: current campaign that needs support now
 - PERSONAL: from the executive director
 
-Requires ANTHROPIC_API_KEY in environment.
+Routes LLM calls through the Open Paws API gateway (OPEN_PAWS_GATEWAY_URL).
+Requires OPEN_PAWS_API_KEY in environment.
 """
 
 from __future__ import annotations
@@ -19,9 +20,14 @@ import os
 from enum import Enum
 from typing import Optional
 
+import httpx
+
 from .models import ChurnRisk, Donor
 
 logger = logging.getLogger(__name__)
+
+_GATEWAY_URL = os.environ.get("OPEN_PAWS_GATEWAY_URL", "https://api.openpaws.ai/v1").rstrip("/")
+_GATEWAY_KEY = os.environ.get("OPEN_PAWS_API_KEY", "")
 
 
 class ReengagementTone(str, Enum):
@@ -84,18 +90,9 @@ def generate_reengagement_email(
             f"Re-engagement is for HIGH/LAPSED donors only. Got: {donor.churn_risk}"
         )
 
-    try:
-        import anthropic
-    except ImportError:
-        logger.warning("anthropic package not installed; returning template fallback")
+    if not _GATEWAY_KEY:
+        logger.warning("OPEN_PAWS_API_KEY not set; returning template fallback")
         return _template_fallback(donor, tone, org_name)
-
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        logger.warning("ANTHROPIC_API_KEY not set; returning template fallback")
-        return _template_fallback(donor, tone, org_name)
-
-    client = anthropic.Anthropic(api_key=api_key)
 
     topic = donor.preferred_campaign_topic or "animal welfare"
     days_lapsed = donor.days_since_last_donation
@@ -111,13 +108,23 @@ def generate_reengagement_email(
     )
 
     try:
-        response = client.messages.create(
-            model="claude-haiku-4-5",  # Cheapest model sufficient for email copy
-            max_tokens=600,
-            system=_SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": user_prompt}],
+        resp = httpx.post(
+            f"{_GATEWAY_URL}/claude/messages",
+            json={
+                "model": os.environ.get("LLM_MODEL", "claude-haiku-4-5-20251001"),
+                "max_tokens": 600,
+                "system": _SYSTEM_PROMPT,
+                "messages": [{"role": "user", "content": user_prompt}],
+            },
+            headers={
+                "Authorization": f"Bearer {_GATEWAY_KEY}",
+                "Content-Type": "application/json",
+            },
+            timeout=60.0,
         )
-        raw = response.content[0].text.strip()
+        resp.raise_for_status()
+        result = resp.json()
+        raw = result["content"][0]["text"].strip()
 
         import json
         # Strip markdown code fences if present
