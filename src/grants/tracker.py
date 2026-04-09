@@ -145,12 +145,12 @@ class GrantTracker:
 
         values.extend([app_id, self.org_id])
 
+        # fields contains only hardcoded column assignment strings (e.g. "status = ?")
+        # and all user-supplied values are passed as parameterized query arguments.
+        set_clause = ", ".join(fields)  # nosec B608
+        query = "UPDATE grant_applications SET " + set_clause + " WHERE id = ? AND org_id = ?"
         with self._connect() as conn:
-            conn.execute(
-                f"UPDATE grant_applications SET {', '.join(fields)} "
-                f"WHERE id = ? AND org_id = ?",
-                values,
-            )
+            conn.execute(query, values)
 
     def get_pipeline(self) -> list[dict]:
         """

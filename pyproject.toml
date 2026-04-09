@@ -27,8 +27,6 @@ dependencies = [
     "numpy>=1.26.0",
     # Forecasting
     "statsmodels>=0.14.0",
-    # LLM
-    "anthropic>=0.26.0",
     # Utilities
     "python-dotenv>=1.0.0",
     "joblib>=1.4.0",

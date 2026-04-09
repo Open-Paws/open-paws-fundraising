@@ -20,7 +20,7 @@ import json
 import logging
 import re
 from pathlib import Path
-from typing import Any, Optional
+from typing import Optional
 
 logger = logging.getLogger(__name__)
 
@@ -114,7 +114,7 @@ def _semantic_score(org_text: str, grant_text: str) -> Optional[float]:
     Install with: pip install open-paws-fundraising[embeddings]
     """
     try:
-        from sentence_transformers import SentenceTransformer, util  # type: ignore[import]
+        from sentence_transformers import util  # type: ignore[import]
     except ImportError:
         return None
 

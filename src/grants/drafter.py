@@ -9,7 +9,8 @@ Generates professional grant application components using Claude:
 
 Static system prompt is placed first for cache optimization.
 Uses claude-haiku-4-5 for cost efficiency on drafting tasks.
-Requires ANTHROPIC_API_KEY in environment.
+Routes LLM calls through the Open Paws API gateway (OPEN_PAWS_GATEWAY_URL).
+Requires OPEN_PAWS_API_KEY in environment.
 """
 
 from __future__ import annotations
@@ -19,7 +20,12 @@ import os
 from datetime import datetime, timezone
 from typing import Optional
 
+import httpx
+
 logger = logging.getLogger(__name__)
+
+_GATEWAY_URL = os.environ.get("OPEN_PAWS_GATEWAY_URL", "https://api.openpaws.ai/v1").rstrip("/")
+_GATEWAY_KEY = os.environ.get("OPEN_PAWS_API_KEY", "")
 
 # Static system prompt — placed first for maximum cache hit rate.
 # This block is identical across all drafting calls.
@@ -62,30 +68,31 @@ def draft_application(
         Dict with sections: loi, executive_summary, program_narrative_outline,
         budget_narrative_stub, metadata.
     """
-    try:
-        import anthropic
-    except ImportError:
-        logger.warning("anthropic package not installed; returning template draft")
+    if not _GATEWAY_KEY:
+        logger.warning("OPEN_PAWS_API_KEY not set; returning template draft")
         return _template_draft(grant, org_profile)
-
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        logger.warning("ANTHROPIC_API_KEY not set; returning template draft")
-        return _template_draft(grant, org_profile)
-
-    client = anthropic.Anthropic(api_key=api_key)
 
     # Build a single comprehensive user prompt
     user_prompt = _build_user_prompt(grant, org_profile, impact_data, match_rationale)
 
     try:
-        response = client.messages.create(
-            model="claude-haiku-4-5",  # Cost-efficient for drafting
-            max_tokens=4000,
-            system=_SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": user_prompt}],
+        resp = httpx.post(
+            f"{_GATEWAY_URL}/claude/messages",
+            json={
+                "model": os.environ.get("LLM_MODEL", "claude-haiku-4-5-20251001"),
+                "max_tokens": 4000,
+                "system": _SYSTEM_PROMPT,
+                "messages": [{"role": "user", "content": user_prompt}],
+            },
+            headers={
+                "Authorization": f"Bearer {_GATEWAY_KEY}",
+                "Content-Type": "application/json",
+            },
+            timeout=60.0,
         )
-        raw = response.content[0].text.strip()
+        resp.raise_for_status()
+        result = resp.json()
+        raw = result["content"][0]["text"].strip()
 
         return _parse_sections(raw, grant, org_profile)
 

@@ -235,7 +235,7 @@ with tab_grants:
     with col_left:
         st.subheader("Application Tracker")
 
-        from src.grants.tracker import ApplicationStatus, GrantTracker
+        from src.grants.tracker import GrantTracker
 
         tracker = GrantTracker(org_id=org_id)
         pipeline = tracker.get_pipeline()
