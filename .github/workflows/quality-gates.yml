@@ -1,0 +1,45 @@
+name: Quality Gates
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  desloppify:
+    name: Desloppify Code Quality
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install desloppify
+        run: pip install "git+https://github.com/Open-Paws/desloppify.git#egg=desloppify[full]"
+
+      - name: Run desloppify scan
+        run: |
+          desloppify scan --path .
+          desloppify next --ci
+        env:
+          DESLOPPIFY_MIN_SCORE: "85"
+
+  speciesist-language:
+    name: Speciesist Language Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run no-animal-violence action
+        uses: Open-Paws/no-animal-violence-action@main
+        with:
+          fail_on_violation: "true"
