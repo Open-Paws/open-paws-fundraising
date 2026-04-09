@@ -11,7 +11,7 @@ Grant data is public information shared across orgs.
 from __future__ import annotations
 
 import sqlite3
-from datetime import date, datetime
+from datetime import UTC, date, datetime
 from enum import Enum
 from pathlib import Path
 from typing import Optional
@@ -94,7 +94,7 @@ class GrantTracker:
         Returns the new application ID.
         Raises ValueError if application for this grant already exists for this org.
         """
-        now = datetime.utcnow().isoformat()
+        now = datetime.now(UTC).isoformat()
         with self._connect() as conn:
             try:
                 cursor = conn.execute(
@@ -126,7 +126,7 @@ class GrantTracker:
         notes: Optional[str] = None,
     ) -> None:
         """Update the status of an application."""
-        now = datetime.utcnow().isoformat()
+        now = datetime.now(UTC).isoformat()
         fields = ["status = ?", "updated_at = ?"]
         values: list = [status.value, now]
 
@@ -244,7 +244,7 @@ class GrantTracker:
 
         Used to surface time-sensitive follow-up actions.
         """
-        cutoff = datetime.utcnow().date()
+        cutoff = datetime.now(UTC).date()
         with self._connect() as conn:
             rows = conn.execute(
                 """
