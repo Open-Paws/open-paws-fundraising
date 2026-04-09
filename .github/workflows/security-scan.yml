@@ -1,0 +1,63 @@
+name: Security Scan
+
+on:
+  pull_request:
+    branches: [main]
+  schedule:
+    # Nightly at 2am UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      fail_on:
+        description: 'Minimum severity level to fail the build'
+        required: false
+        default: 'HIGH'
+        type: choice
+        options:
+          - LOW
+          - MEDIUM
+          - HIGH
+          - CRITICAL
+
+jobs:
+  security-scan:
+    name: Open Paws AI Security Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install open-paws-ai-security
+        run: |
+          pip install git+https://github.com/Open-Paws/open-paws-ai-security.git
+
+      - name: Run security scan
+        id: scan
+        run: |
+          python -m src.scanner.pipeline \
+            --target . \
+            --ci \
+            --fail-on ${{ inputs.fail_on || 'HIGH' }}
+        continue-on-error: true
+
+      - name: Upload findings artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-findings
+          path: security-report.json
+          retention-days: 30
+
+      - name: Fail if threshold exceeded
+        if: steps.scan.outcome == 'failure'
+        run: |
+          echo "Security scan found HIGH or CRITICAL findings. Review the artifact."
+          exit 1
