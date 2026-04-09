@@ -1,0 +1,461 @@
+[
+  {
+    "id": "open-philanthropy-farm-animal",
+    "funder": "Open Philanthropy",
+    "grant_name": "Farm Animal Welfare Program",
+    "focus_areas": [
+      "farmed animal welfare",
+      "corporate campaigns",
+      "cage-free commitments",
+      "chicken welfare",
+      "aquatic animal welfare",
+      "alternative proteins",
+      "policy advocacy",
+      "movement building"
+    ],
+    "amount_min": 50000,
+    "amount_max": 5000000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "global",
+    "url": "https://www.openphilanthropy.org/focus/farm-animal-welfare/",
+    "notes": "Largest funder in farmed animal welfare. Funds corporate campaigns, research, and movement infrastructure. Highly selective but transformative grant sizes. Strong preference for high-impact, evidence-based approaches. Letter of inquiry first."
+  },
+  {
+    "id": "humane-society-foundation",
+    "funder": "Humane Society Foundation",
+    "grant_name": "Animal Protection Grants",
+    "focus_areas": [
+      "companion animal welfare",
+      "farmed animal welfare",
+      "wildlife protection",
+      "anti-cruelty programs",
+      "spay-neuter programs",
+      "animal shelter operations",
+      "humane education"
+    ],
+    "amount_min": 5000,
+    "amount_max": 50000,
+    "deadline_pattern": "annual",
+    "geographic_restrictions": "US only",
+    "url": "https://www.hsus.org/hsus_field/hsus_grants_program/",
+    "notes": "Funds US-based animal protection organizations. Preference for programs with broad animal welfare impact. Annual cycle with spring deadline. Requires 501(c)(3) status."
+  },
+  {
+    "id": "aspca-grants",
+    "funder": "ASPCA",
+    "grant_name": "ASPCA Grants Program",
+    "focus_areas": [
+      "companion animal welfare",
+      "animal shelter capacity",
+      "anti-cruelty investigation",
+      "spay-neuter access",
+      "animal rescue operations",
+      "humane law enforcement"
+    ],
+    "amount_min": 10000,
+    "amount_max": 100000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "US only",
+    "url": "https://www.aspca.org/about-us/aspca-grants",
+    "notes": "Multiple grant programs covering shelter capacity, anti-cruelty, and rescue. Particularly strong for companion animal organizations. Rolling applications for some programs."
+  },
+  {
+    "id": "vogt-foundation",
+    "funder": "Vogt Foundation",
+    "grant_name": "Animal Advocacy Grants",
+    "focus_areas": [
+      "farmed animal advocacy",
+      "animal rights movement building",
+      "veganism promotion",
+      "anti-factory-farming campaigns",
+      "animal liberation"
+    ],
+    "amount_min": 10000,
+    "amount_max": 200000,
+    "deadline_pattern": "annual",
+    "geographic_restrictions": "US and Europe",
+    "url": "https://www.vogtfoundation.org",
+    "notes": "Relatively small foundation with strong ideological alignment with the animal rights movement. Values systemic change over welfare reform. Relationship-driven."
+  },
+  {
+    "id": "wilks-foundation",
+    "funder": "Wilks Foundation",
+    "grant_name": "Animal Protection Initiative",
+    "focus_areas": [
+      "farmed animal welfare",
+      "factory farm investigations",
+      "undercover documentation",
+      "corporate accountability",
+      "anti-factory-farming campaigns"
+    ],
+    "amount_min": 100000,
+    "amount_max": 2000000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "global",
+    "url": "https://www.wilksfoundation.org",
+    "notes": "Major funder from the Wilks family (fracking billionaires turned vegans). Funds investigations and corporate campaigns. Large grants available. Strong focus on undercover work and systemic change."
+  },
+  {
+    "id": "faunalytics-research-grants",
+    "funder": "Faunalytics",
+    "grant_name": "Animal Advocacy Research Grants",
+    "focus_areas": [
+      "animal advocacy research",
+      "movement effectiveness",
+      "donor behavior research",
+      "vegan outreach effectiveness",
+      "farmed animal welfare research",
+      "meta-research"
+    ],
+    "amount_min": 5000,
+    "amount_max": 50000,
+    "deadline_pattern": "annual",
+    "geographic_restrictions": "global",
+    "url": "https://faunalytics.org/our-research/research-grants/",
+    "notes": "Funds research that improves animal advocacy effectiveness. Strong fit for orgs doing measurement and evaluation. Requires research rigor. Annual cycle."
+  },
+  {
+    "id": "pollination-project",
+    "funder": "The Pollination Project",
+    "grant_name": "Grassroots Animal Advocacy Grants",
+    "focus_areas": [
+      "grassroots animal advocacy",
+      "veganism outreach",
+      "farmed animal welfare",
+      "companion animal welfare",
+      "community-based activism"
+    ],
+    "amount_min": 500,
+    "amount_max": 1500,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "global",
+    "url": "https://thepollinationproject.org",
+    "notes": "Small seed grants (typically $1,000) for grassroots projects. Rolling applications reviewed weekly. Excellent for early-stage orgs and individual activists. Very accessible application process."
+  },
+  {
+    "id": "albert-schweitzer-foundation",
+    "funder": "Albert Schweitzer Foundation",
+    "grant_name": "Animal Advocacy Project Grants",
+    "focus_areas": [
+      "farmed animal welfare",
+      "corporate campaigns",
+      "legislative advocacy",
+      "vegan outreach",
+      "institutional food reform"
+    ],
+    "amount_min": 5000,
+    "amount_max": 50000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "global (Europe focus)",
+    "url": "https://www.albert-schweitzer-stiftung.de/en",
+    "notes": "German-based foundation funding global animal advocacy. Strong focus on corporate campaigns and institutional food policy. Good fit for EU-focused work."
+  },
+  {
+    "id": "animal-charity-evaluators-regranting",
+    "funder": "Animal Charity Evaluators",
+    "grant_name": "Movement Grants",
+    "focus_areas": [
+      "evidence-based animal advocacy",
+      "farmed animal welfare",
+      "movement building",
+      "high-impact interventions",
+      "effective altruism aligned advocacy"
+    ],
+    "amount_min": 10000,
+    "amount_max": 500000,
+    "deadline_pattern": "annual",
+    "geographic_restrictions": "global",
+    "url": "https://animalcharityevaluators.org/donations/movement-grants/",
+    "notes": "ACE's regranting program. Highly evidence-focused. Tends to fund orgs that can demonstrate measurable impact. Annual cycle. Good for orgs with strong evaluation frameworks."
+  },
+  {
+    "id": "new-harvest",
+    "funder": "New Harvest",
+    "grant_name": "Cellular Agriculture Research Grants",
+    "focus_areas": [
+      "cellular agriculture",
+      "alternative proteins",
+      "cultivated meat research",
+      "food technology",
+      "farmed animal replacement"
+    ],
+    "amount_min": 20000,
+    "amount_max": 300000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "global",
+    "url": "https://www.new-harvest.org/grants",
+    "notes": "Focused exclusively on cellular agriculture and alternative protein research. Strong fit for academic and research organizations working on protein alternatives."
+  },
+  {
+    "id": "good-food-institute-grants",
+    "funder": "Good Food Institute",
+    "grant_name": "Alternative Protein Research Grants",
+    "focus_areas": [
+      "plant-based protein",
+      "fermentation technology",
+      "cultivated meat",
+      "alternative seafood",
+      "food systems transformation"
+    ],
+    "amount_min": 50000,
+    "amount_max": 500000,
+    "deadline_pattern": "annual",
+    "geographic_restrictions": "global",
+    "url": "https://gfi.org/science/grants/",
+    "notes": "GFI funds open-access alternative protein research. Strong preference for academic institutions. Annual cycle with spring deadline."
+  },
+  {
+    "id": "global-animal-law-foundation",
+    "funder": "Global Animal Law Foundation (GAL)",
+    "grant_name": "Animal Law Advocacy Grants",
+    "focus_areas": [
+      "animal law",
+      "legal advocacy",
+      "animal rights litigation",
+      "policy development",
+      "legislative campaigns",
+      "ag-gag opposition"
+    ],
+    "amount_min": 5000,
+    "amount_max": 75000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "global",
+    "url": "https://www.globalanimallaw.org",
+    "notes": "Funds legal advocacy and policy work. Strong fit for orgs doing legislative campaigns or anti-ag-gag work. Rolling applications."
+  },
+  {
+    "id": "society-prevention-cruelty-animals-international",
+    "funder": "World Animal Protection",
+    "grant_name": "Partnership Grants",
+    "focus_areas": [
+      "farmed animal welfare",
+      "wildlife protection",
+      "disaster animal rescue",
+      "anti-cruelty campaigns",
+      "corporate engagement"
+    ],
+    "amount_min": 20000,
+    "amount_max": 200000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "global",
+    "url": "https://www.worldanimalprotection.org/our-work/partners",
+    "notes": "Funds partnership organizations. Preference for established organizations with demonstrated capacity. Good for coalition partners working on international campaigns."
+  },
+  {
+    "id": "four-paws-grants",
+    "funder": "FOUR PAWS International",
+    "grant_name": "Animal Welfare Project Grants",
+    "focus_areas": [
+      "companion animal welfare",
+      "farmed animal welfare",
+      "wildlife in captivity",
+      "animal rescue",
+      "animal welfare policy"
+    ],
+    "amount_min": 10000,
+    "amount_max": 150000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "global (Europe and Asia focus)",
+    "url": "https://www.four-paws.org",
+    "notes": "Large international animal welfare organization that funds partner projects. Strong focus on Central/Eastern Europe and Southeast Asia. Rolling applications with multi-year support possible."
+  },
+  {
+    "id": "marisla-foundation",
+    "funder": "Marisla Foundation",
+    "grant_name": "Environmental and Animal Protection Grants",
+    "focus_areas": [
+      "marine animal welfare",
+      "ocean protection",
+      "aquatic animal suffering",
+      "fishing industry reform",
+      "wildlife conservation"
+    ],
+    "amount_min": 25000,
+    "amount_max": 150000,
+    "deadline_pattern": "annual",
+    "geographic_restrictions": "US",
+    "url": "https://www.marisla.org",
+    "notes": "Funds ocean and marine animal protection. Strong fit for aquatic animal welfare work. By invitation only for larger grants; LOI process for new applicants."
+  },
+  {
+    "id": "animal-welfare-trust",
+    "funder": "Animal Welfare Trust",
+    "grant_name": "UK Animal Welfare Grants",
+    "focus_areas": [
+      "companion animal welfare",
+      "farmed animal welfare",
+      "animal research alternatives",
+      "wildlife welfare",
+      "animal welfare education"
+    ],
+    "amount_min": 5000,
+    "amount_max": 50000,
+    "deadline_pattern": "quarterly",
+    "geographic_restrictions": "UK only",
+    "url": "https://www.animalwelfaretrust.org",
+    "notes": "UK-focused funder. Quarterly grant rounds. Strong fit for UK orgs working across companion animal, farmed animal, and research alternatives."
+  },
+  {
+    "id": "doris-day-animal-foundation",
+    "funder": "Doris Day Animal Foundation",
+    "grant_name": "Companion Animal Grants",
+    "focus_areas": [
+      "companion animal welfare",
+      "spay-neuter programs",
+      "animal shelter support",
+      "animal rescue",
+      "humane education"
+    ],
+    "amount_min": 1000,
+    "amount_max": 10000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "US only",
+    "url": "https://www.ddaf.org",
+    "notes": "Smaller grants for companion animal welfare. Rolling applications. Good for grassroots companion animal organizations."
+  },
+  {
+    "id": "petsmart-charities",
+    "funder": "PetSmart Charities",
+    "grant_name": "Lifesaving Programs Grants",
+    "focus_areas": [
+      "companion animal rescue",
+      "spay-neuter programs",
+      "shelter capacity",
+      "pet adoption",
+      "homeless animal reduction"
+    ],
+    "amount_min": 5000,
+    "amount_max": 75000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "US and Canada",
+    "url": "https://petsmartcharities.org/pro/grant-programs",
+    "notes": "Multiple grant programs for companion animal organizations. Strong focus on reducing companion animal homelessness. Accessible application portal."
+  },
+  {
+    "id": "maddie-fund",
+    "funder": "Maddie's Fund",
+    "grant_name": "Shelter Medicine and No-Kill Programs",
+    "focus_areas": [
+      "shelter medicine",
+      "no-kill shelter programs",
+      "companion animal welfare",
+      "veterinary training",
+      "shelter capacity building"
+    ],
+    "amount_min": 25000,
+    "amount_max": 1000000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "US only",
+    "url": "https://www.maddiesfund.org",
+    "notes": "Major funder for companion animal shelters. Focus on no-kill outcomes and shelter medicine. Large grants available for capacity-building. Strong preference for data-driven programs."
+  },
+  {
+    "id": "animal-legal-defense-fund-grants",
+    "funder": "Animal Legal Defense Fund",
+    "grant_name": "Pro Bono Legal Services and Advocacy Grants",
+    "focus_areas": [
+      "animal law",
+      "animal rights litigation",
+      "ag-gag challenges",
+      "factory farm legal challenges",
+      "wildlife law",
+      "legal education"
+    ],
+    "amount_min": 5000,
+    "amount_max": 100000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "US",
+    "url": "https://aldf.org/project/grants/",
+    "notes": "ALDF funds legal advocacy work. Strong fit for orgs doing ag-gag challenges, factory farm litigation, or legal education. Coordinates pro bono legal representation for some grantees."
+  },
+  {
+    "id": "mercy-for-animals-grants",
+    "funder": "Mercy For Animals",
+    "grant_name": "Corporate Campaign Support Grants",
+    "focus_areas": [
+      "corporate campaigns",
+      "farmed animal welfare",
+      "cage-free campaigns",
+      "chicken welfare",
+      "movement capacity building"
+    ],
+    "amount_min": 10000,
+    "amount_max": 150000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "global",
+    "url": "https://mercyforanimals.org/about/grants/",
+    "notes": "MFA provides grants to support corporate campaign work globally. Strong fit for orgs running cage-free, chicken welfare, or similar campaigns. Relationship-driven process."
+  },
+  {
+    "id": "farm-sanctuary-community-grants",
+    "funder": "Farm Sanctuary",
+    "grant_name": "Community Advocacy Grants",
+    "focus_areas": [
+      "farmed animal advocacy",
+      "farmed animal rescue",
+      "sanctuary operations",
+      "anti-factory-farming education",
+      "community outreach"
+    ],
+    "amount_min": 1000,
+    "amount_max": 15000,
+    "deadline_pattern": "annual",
+    "geographic_restrictions": "US",
+    "url": "https://www.farmsanctuary.org/grants/",
+    "notes": "Smaller grants for community-based farmed animal advocacy. Good fit for local orgs doing outreach, education, or sanctuary support."
+  },
+  {
+    "id": "humane-farming-association",
+    "funder": "Humane Farming Association",
+    "grant_name": "Anti-Factory-Farming Campaign Support",
+    "focus_areas": [
+      "factory farm opposition",
+      "farmed animal welfare",
+      "consumer campaigns",
+      "corporate accountability",
+      "legislative work on factory farming"
+    ],
+    "amount_min": 5000,
+    "amount_max": 50000,
+    "deadline_pattern": "rolling",
+    "geographic_restrictions": "US",
+    "url": "https://www.hfa.org",
+    "notes": "Funds organizations working to end factory farming. Strong alignment with anti-confinement campaigns and corporate accountability work."
+  },
+  {
+    "id": "prevention-animal-cruelty-europe",
+    "funder": "Prevention of Animal Cruelty in Europe (PACE)",
+    "grant_name": "European Animal Advocacy Grants",
+    "focus_areas": [
+      "farmed animal welfare in Europe",
+      "animal transport reform",
+      "slaughter practices reform",
+      "EU policy advocacy",
+      "corporate campaigns in Europe"
+    ],
+    "amount_min": 10000,
+    "amount_max": 100000,
+    "deadline_pattern": "annual",
+    "geographic_restrictions": "Europe only",
+    "url": "https://www.eurogroup.org/pace/",
+    "notes": "Funds European animal advocacy, particularly focused on EU policy and corporate engagement. Annual cycle. Strong fit for orgs working on EU farming standards."
+  },
+  {
+    "id": "pew-trusts-animal-welfare",
+    "funder": "Pew Charitable Trusts",
+    "grant_name": "Animal Agriculture and Food System Reform",
+    "focus_areas": [
+      "factory farm reform",
+      "antibiotic use in agriculture",
+      "food system sustainability",
+      "farmed animal welfare policy",
+      "ag industry accountability"
+    ],
+    "amount_min": 100000,
+    "amount_max": 1000000,
+    "deadline_pattern": "invitation",
+    "geographic_restrictions": "US",
+    "url": "https://www.pewtrusts.org/en/projects/animal-agriculture",
+    "notes": "Pew funds policy-oriented work on factory farming reform and antibiotic resistance. Large grants but mostly invitation-only. Strong fit for policy advocacy and research organizations. Letter of inquiry to initiate contact."
+  }
+]
