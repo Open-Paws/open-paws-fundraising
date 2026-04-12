@@ -1,0 +1,3219 @@
+{
+  "version": 3,
+  "created": "2026-04-12T08:31:32+00:00",
+  "last_scan": "2026-04-12T08:46:39+00:00",
+  "scan_count": 4,
+  "overall_score": 83.5,
+  "objective_score": 74.1,
+  "strict_score": 83.5,
+  "verified_strict_score": 74.1,
+  "stats": {
+    "total": 52,
+    "auto_resolved": 0,
+    "deferred": 0,
+    "false_positive": 0,
+    "fixed": 0,
+    "open": 52,
+    "triaged_out": 0,
+    "wontfix": 0,
+    "by_tier": {
+      "1": {
+        "auto_resolved": 0,
+        "deferred": 0,
+        "false_positive": 0,
+        "fixed": 0,
+        "open": 5,
+        "triaged_out": 0,
+        "wontfix": 0
+      },
+      "2": {
+        "auto_resolved": 0,
+        "deferred": 0,
+        "false_positive": 0,
+        "fixed": 0,
+        "open": 11,
+        "triaged_out": 0,
+        "wontfix": 0
+      },
+      "3": {
+        "auto_resolved": 0,
+        "deferred": 0,
+        "false_positive": 0,
+        "fixed": 0,
+        "open": 36,
+        "triaged_out": 0,
+        "wontfix": 0
+      }
+    }
+  },
+  "work_items": {
+    "unused::src/forecasting/revenue_forecast.py::alpha:154": {
+      "id": "unused::src/forecasting/revenue_forecast.py::alpha:154",
+      "detector": "unused",
+      "file": "src/forecasting/revenue_forecast.py",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Unused vars: alpha",
+      "detail": {
+        "line": 154,
+        "category": "vars"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::src/grants/tracker.py::cutoff:247": {
+      "id": "unused::src/grants/tracker.py::cutoff:247",
+      "detector": "unused",
+      "file": "src/grants/tracker.py",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Unused vars: cutoff",
+      "detail": {
+        "line": 247,
+        "category": "vars"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::tests/test_churn_predictor.py::pytest:14": {
+      "id": "unused::tests/test_churn_predictor.py::pytest:14",
+      "detector": "unused",
+      "file": "tests/test_churn_predictor.py",
+      "tier": 1,
+      "confidence": "high",
+      "summary": "Unused imports: pytest",
+      "detail": {
+        "line": 14,
+        "category": "imports"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::tests/test_impact_reporting.py::pytest:16": {
+      "id": "unused::tests/test_impact_reporting.py::pytest:16",
+      "detector": "unused",
+      "file": "tests/test_impact_reporting.py",
+      "tier": 1,
+      "confidence": "high",
+      "summary": "Unused imports: pytest",
+      "detail": {
+        "line": 16,
+        "category": "imports"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::tests/test_privacy_invariants.py::pytest:15": {
+      "id": "unused::tests/test_privacy_invariants.py::pytest:15",
+      "detector": "unused",
+      "file": "tests/test_privacy_invariants.py",
+      "tier": 1,
+      "confidence": "high",
+      "summary": "Unused imports: pytest",
+      "detail": {
+        "line": 15,
+        "category": "imports"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::src/donors/churn_predictor.py": {
+      "id": "structural::src/donors/churn_predictor.py",
+      "detector": "structural",
+      "file": "src/donors/churn_predictor.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 62",
+      "detail": {
+        "complexity_score": 62,
+        "complexity_signals": [
+          "nesting depth 6",
+          "long function (train: 136 LOC)"
+        ],
+        "loc": 364
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "responsibility_cohesion::src/api/server.py": {
+      "id": "responsibility_cohesion::src/api/server.py",
+      "detector": "responsibility_cohesion",
+      "file": "src/api/server.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Mixed responsibilities: 11 top-level funcs across 11 disconnected clusters (1, 1, 1, 1, 1, +6 more)",
+      "detail": {
+        "loc": 395,
+        "function_count": 11,
+        "component_count": 11,
+        "component_sizes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "family_count": 9,
+        "import_cluster_count": 1,
+        "families": [
+          "add",
+          "analyze",
+          "draft",
+          "get",
+          "health",
+          "match",
+          "require",
+          "revenue"
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "single_use::src/grants/drafter.py": {
+      "id": "single_use::src/grants/drafter.py",
+      "detector": "single_use",
+      "file": "src/grants/drafter.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Single-use (299 LOC): only imported by src/api/server.py",
+      "detail": {
+        "loc": 299,
+        "sole_importer": "src/api/server.py"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::dashboard/app.py": {
+      "id": "orphaned::dashboard/app.py",
+      "detector": "orphaned",
+      "file": "dashboard/app.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (440 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 440
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::src/api/server.py": {
+      "id": "orphaned::src/api/server.py",
+      "detector": "orphaned",
+      "file": "src/api/server.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (395 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 395
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::src/donors/reengagement.py": {
+      "id": "orphaned::src/donors/reengagement.py",
+      "detector": "orphaned",
+      "file": "src/donors/reengagement.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (232 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 232
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:32+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::src/donors/segments.py::untested_module": {
+      "id": "test_coverage::src/donors/segments.py::untested_module",
+      "detector": "test_coverage",
+      "file": "src/donors/segments.py",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (73 LOC, 1 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 73,
+        "importer_count": 1,
+        "loc_weight": 8.54400374531753
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::src/grants/drafter.py::untested_module": {
+      "id": "test_coverage::src/grants/drafter.py::untested_module",
+      "detector": "test_coverage",
+      "file": "src/grants/drafter.py",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (299 LOC, 1 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 299,
+        "importer_count": 1,
+        "loc_weight": 17.291616465790582
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::src/api/server.py::untested_module": {
+      "id": "test_coverage::src/api/server.py::untested_module",
+      "detector": "test_coverage",
+      "file": "src/api/server.py",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (395 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 395,
+        "importer_count": 0,
+        "loc_weight": 19.87460691435179
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::src/donors/reengagement.py::untested_module": {
+      "id": "test_coverage::src/donors/reengagement.py::untested_module",
+      "detector": "test_coverage",
+      "file": "src/donors/reengagement.py",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (232 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 232,
+        "importer_count": 0,
+        "loc_weight": 15.231546211727817
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::src/grants/tracker.py::untested_module": {
+      "id": "test_coverage::src/grants/tracker.py::untested_module",
+      "detector": "test_coverage",
+      "file": "src/grants/tracker.py",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (259 LOC, 2 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 259,
+        "importer_count": 2,
+        "loc_weight": 16.09347693943108
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/api/server.py::swallowed_error": {
+      "id": "smells::src/api/server.py::swallowed_error",
+      "detector": "smells",
+      "file": "src/api/server.py",
+      "tier": 2,
+      "confidence": "medium",
+      "summary": "1x Catch block that only logs (swallowed error)",
+      "detail": {
+        "smell_id": "swallowed_error",
+        "severity": "high",
+        "count": 1,
+        "lines": [
+          163
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/donors/churn_predictor.py::swallowed_error": {
+      "id": "smells::src/donors/churn_predictor.py::swallowed_error",
+      "detector": "smells",
+      "file": "src/donors/churn_predictor.py",
+      "tier": 2,
+      "confidence": "medium",
+      "summary": "2x Catch block that only logs (swallowed error)",
+      "detail": {
+        "smell_id": "swallowed_error",
+        "severity": "high",
+        "count": 2,
+        "lines": [
+          158,
+          248
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::dashboard/app.py::import_path_mutation": {
+      "id": "smells::dashboard/app.py::import_path_mutation",
+      "detector": "smells",
+      "file": "dashboard/app.py",
+      "tier": 2,
+      "confidence": "medium",
+      "summary": "1x sys.path mutation at import time (boundary purity leak)",
+      "detail": {
+        "smell_id": "import_path_mutation",
+        "severity": "high",
+        "count": 1,
+        "lines": [
+          21
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/api/server.py::annotation_quality": {
+      "id": "smells::src/api/server.py::annotation_quality",
+      "detector": "smells",
+      "file": "src/api/server.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "9x Loose type annotation \u2014 use specific types",
+      "detail": {
+        "smell_id": "annotation_quality",
+        "severity": "medium",
+        "count": 9,
+        "lines": [
+          138,
+          145,
+          212,
+          235,
+          264,
+          303,
+          321,
+          344,
+          374
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/donors/reengagement.py::annotation_quality": {
+      "id": "smells::src/donors/reengagement.py::annotation_quality",
+      "detector": "smells",
+      "file": "src/donors/reengagement.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Loose type annotation \u2014 use specific types",
+      "detail": {
+        "smell_id": "annotation_quality",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          62
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/forecasting/revenue_forecast.py::annotation_quality": {
+      "id": "smells::src/forecasting/revenue_forecast.py::annotation_quality",
+      "detector": "smells",
+      "file": "src/forecasting/revenue_forecast.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Loose type annotation \u2014 use specific types",
+      "detail": {
+        "smell_id": "annotation_quality",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          49
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/grants/drafter.py::annotation_quality": {
+      "id": "smells::src/grants/drafter.py::annotation_quality",
+      "detector": "smells",
+      "file": "src/grants/drafter.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Loose type annotation \u2014 use specific types",
+      "detail": {
+        "smell_id": "annotation_quality",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          52
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/grants/tracker.py::annotation_quality": {
+      "id": "smells::src/grants/tracker.py::annotation_quality",
+      "detector": "smells",
+      "file": "src/grants/tracker.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Loose type annotation \u2014 use specific types",
+      "detail": {
+        "smell_id": "annotation_quality",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          202
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/impact/reporting.py::annotation_quality": {
+      "id": "smells::src/impact/reporting.py::annotation_quality",
+      "detector": "smells",
+      "file": "src/impact/reporting.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "2x Loose type annotation \u2014 use specific types",
+      "detail": {
+        "smell_id": "annotation_quality",
+        "severity": "medium",
+        "count": 2,
+        "lines": [
+          163,
+          206
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/donors/reengagement.py::duplicate_constant": {
+      "id": "smells::src/donors/reengagement.py::duplicate_constant",
+      "detector": "smells",
+      "file": "src/donors/reengagement.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "2x Constant defined identically in multiple modules",
+      "detail": {
+        "smell_id": "duplicate_constant",
+        "severity": "medium",
+        "count": 2,
+        "lines": [
+          29,
+          30
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/grants/drafter.py::duplicate_constant": {
+      "id": "smells::src/grants/drafter.py::duplicate_constant",
+      "detector": "smells",
+      "file": "src/grants/drafter.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "2x Constant defined identically in multiple modules",
+      "detail": {
+        "smell_id": "duplicate_constant",
+        "severity": "medium",
+        "count": 2,
+        "lines": [
+          27,
+          28
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/grants/tracker.py::optional_param_sprawl": {
+      "id": "smells::src/grants/tracker.py::optional_param_sprawl",
+      "detector": "smells",
+      "file": "src/grants/tracker.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Too many optional params \u2014 consider a config object",
+      "detail": {
+        "smell_id": "optional_param_sprawl",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          119
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/grants/matcher.py::high_cyclomatic_complexity": {
+      "id": "smells::src/grants/matcher.py::high_cyclomatic_complexity",
+      "detector": "smells",
+      "file": "src/grants/matcher.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x High cyclomatic complexity (>12 decision points)",
+      "detail": {
+        "smell_id": "high_cyclomatic_complexity",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          40
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/api/server.py::deferred_import": {
+      "id": "smells::src/api/server.py::deferred_import",
+      "detector": "smells",
+      "file": "src/api/server.py",
+      "tier": 3,
+      "confidence": "low",
+      "summary": "7x Function-level import (possible circular import workaround)",
+      "detail": {
+        "smell_id": "deferred_import",
+        "severity": "low",
+        "count": 7,
+        "lines": [
+          155,
+          244,
+          274,
+          305,
+          326,
+          350,
+          384
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/donors/churn_predictor.py::deferred_import": {
+      "id": "smells::src/donors/churn_predictor.py::deferred_import",
+      "detector": "smells",
+      "file": "src/donors/churn_predictor.py",
+      "tier": 3,
+      "confidence": "low",
+      "summary": "2x Function-level import (possible circular import workaround)",
+      "detail": {
+        "smell_id": "deferred_import",
+        "severity": "low",
+        "count": 2,
+        "lines": [
+          153,
+          177
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/donors/reengagement.py::deferred_import": {
+      "id": "smells::src/donors/reengagement.py::deferred_import",
+      "detector": "smells",
+      "file": "src/donors/reengagement.py",
+      "tier": 3,
+      "confidence": "low",
+      "summary": "1x Function-level import (possible circular import workaround)",
+      "detail": {
+        "smell_id": "deferred_import",
+        "severity": "low",
+        "count": 1,
+        "lines": [
+          129
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/forecasting/revenue_forecast.py::deferred_import": {
+      "id": "smells::src/forecasting/revenue_forecast.py::deferred_import",
+      "detector": "smells",
+      "file": "src/forecasting/revenue_forecast.py",
+      "tier": 3,
+      "confidence": "low",
+      "summary": "2x Function-level import (possible circular import workaround)",
+      "detail": {
+        "smell_id": "deferred_import",
+        "severity": "low",
+        "count": 2,
+        "lines": [
+          44,
+          135
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/grants/matcher.py::deferred_import": {
+      "id": "smells::src/grants/matcher.py::deferred_import",
+      "detector": "smells",
+      "file": "src/grants/matcher.py",
+      "tier": 3,
+      "confidence": "low",
+      "summary": "2x Function-level import (possible circular import workaround)",
+      "detail": {
+        "smell_id": "deferred_import",
+        "severity": "low",
+        "count": 2,
+        "lines": [
+          117,
+          140
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/donors/segments.py::magic_number": {
+      "id": "smells::src/donors/segments.py::magic_number",
+      "detector": "smells",
+      "file": "src/donors/segments.py",
+      "tier": 3,
+      "confidence": "low",
+      "summary": "1x Magic numbers (>1000 in logic)",
+      "detail": {
+        "smell_id": "magic_number",
+        "severity": "low",
+        "count": 1,
+        "lines": [
+          35
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::dashboard/app.py::broad_except": {
+      "id": "smells::dashboard/app.py::broad_except",
+      "detector": "smells",
+      "file": "dashboard/app.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "2x Broad except \u2014 check library exceptions before narrowing",
+      "detail": {
+        "smell_id": "broad_except",
+        "severity": "medium",
+        "count": 2,
+        "lines": [
+          152,
+          364
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/donors/reengagement.py::broad_except": {
+      "id": "smells::src/donors/reengagement.py::broad_except",
+      "detector": "smells",
+      "file": "src/donors/reengagement.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Broad except \u2014 check library exceptions before narrowing",
+      "detail": {
+        "smell_id": "broad_except",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          139
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/forecasting/revenue_forecast.py::broad_except": {
+      "id": "smells::src/forecasting/revenue_forecast.py::broad_except",
+      "detector": "smells",
+      "file": "src/forecasting/revenue_forecast.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Broad except \u2014 check library exceptions before narrowing",
+      "detail": {
+        "smell_id": "broad_except",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          171
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/grants/drafter.py::broad_except": {
+      "id": "smells::src/grants/drafter.py::broad_except",
+      "detector": "smells",
+      "file": "src/grants/drafter.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Broad except \u2014 check library exceptions before narrowing",
+      "detail": {
+        "smell_id": "broad_except",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          99
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/api/server.py::raise_without_from": {
+      "id": "smells::src/api/server.py::raise_without_from",
+      "detector": "smells",
+      "file": "src/api/server.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "3x Raise inside except without `from err`",
+      "detail": {
+        "smell_id": "raise_without_from",
+        "severity": "medium",
+        "count": 3,
+        "lines": [
+          338,
+          355,
+          393
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/grants/tracker.py::raise_without_from": {
+      "id": "smells::src/grants/tracker.py::raise_without_from",
+      "detector": "smells",
+      "file": "src/grants/tracker.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Raise inside except without `from err`",
+      "detail": {
+        "smell_id": "raise_without_from",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          115
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "smells::src/grants/matcher.py::global_keyword": {
+      "id": "smells::src/grants/matcher.py::global_keyword",
+      "detector": "smells",
+      "file": "src/grants/matcher.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "1x Global keyword usage",
+      "detail": {
+        "smell_id": "global_keyword",
+        "severity": "medium",
+        "count": 1,
+        "lines": [
+          136
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "global_mutable_config::src/grants/matcher.py::_embedding_model": {
+      "id": "global_mutable_config::src/grants/matcher.py::_embedding_model",
+      "detector": "global_mutable_config",
+      "file": "src/grants/matcher.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Module-level mutable '_embedding_model' (line 131) modified from 1 site(s)",
+      "detail": {
+        "mutation_count": 1,
+        "mutation_lines": [
+          142
+        ]
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "security::src/donors/reengagement.py::security::log_sensitive::src/donors/reengagement.py::94": {
+      "id": "security::src/donors/reengagement.py::security::log_sensitive::src/donors/reengagement.py::94",
+      "detector": "security",
+      "file": "src/donors/reengagement.py",
+      "tier": 2,
+      "confidence": "medium",
+      "summary": "Sensitive data may be logged",
+      "detail": {
+        "kind": "log_sensitive",
+        "severity": "medium",
+        "line": 94,
+        "content": "        logger.warning(\"OPEN_PAWS_API_KEY not set; returning template fallback\")",
+        "remediation": "Remove sensitive data from log statements"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "zone": "production",
+      "lang": "python",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "security::src/grants/drafter.py::security::log_sensitive::src/grants/drafter.py::72": {
+      "id": "security::src/grants/drafter.py::security::log_sensitive::src/grants/drafter.py::72",
+      "detector": "security",
+      "file": "src/grants/drafter.py",
+      "tier": 2,
+      "confidence": "medium",
+      "summary": "Sensitive data may be logged",
+      "detail": {
+        "kind": "log_sensitive",
+        "severity": "medium",
+        "line": 72,
+        "content": "        logger.warning(\"OPEN_PAWS_API_KEY not set; returning template draft\")",
+        "remediation": "Remove sensitive data from log statements"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "zone": "production",
+      "lang": "python",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "dict_keys::src/grants/drafter.py::overwritten_key::sections::loi": {
+      "id": "dict_keys::src/grants/drafter.py::overwritten_key::sections::loi",
+      "detector": "dict_keys",
+      "file": "src/grants/drafter.py",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Dict key \"loi\" overwritten on `sections` at line 234 (previously set at line 195, never read between)",
+      "detail": {
+        "kind": "overwritten_key",
+        "key": "loi",
+        "line": 234,
+        "info": "in _parse_sections()"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "dict_keys::dashboard/app.py::schema_drift::org_name::204": {
+      "id": "dict_keys::dashboard/app.py::schema_drift::org_name::204",
+      "detector": "dict_keys",
+      "file": "dashboard/app.py",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Schema drift: 8/10 dict literals use different key, but dashboard/app.py:204 uses \"org_name\".",
+      "detail": {
+        "kind": "schema_drift",
+        "key": "org_name",
+        "line": 204,
+        "info": "Cluster of 10 similar dict literals. Key \"org_name\" appears in only 2. Consensus keys: ['annual_budget', 'geography', 'mission', 'org_id', 'programs']"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused_enums::src/donors/reengagement.py::ReengagementTone": {
+      "id": "unused_enums::src/donors/reengagement.py::ReengagementTone",
+      "detector": "unused_enums",
+      "file": "src/donors/reengagement.py",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Unused enum: ReengagementTone (3 members) \u2014 never imported externally",
+      "detail": {
+        "line": 33,
+        "member_count": 3
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:31:33+00:00",
+      "last_seen": "2026-04-12T08:46:39+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "python",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "review::.::holistic::logic_clarity::fr-001": {
+      "id": "review::.::holistic::logic_clarity::fr-001",
+      "detector": "review",
+      "file": ".",
+      "tier": 1,
+      "confidence": "high",
+      "summary": "Silent proxy: days_since_last_donation used as value for days_since_last_communication in model feature extraction",
+      "detail": {
+        "holistic": true,
+        "dimension": "logic_clarity",
+        "related_files": [
+          "src/donors/churn_predictor.py",
+          "src/donors/models.py"
+        ],
+        "evidence": [
+          "ChurnPredictor._predict_model line contains: 'days_since_last_communication': d.days_since_last_donation  # proxy",
+          "Donor dataclass has no days_since_last_communication field, so this proxy is unavoidable and silently degrades model accuracy",
+          "FEATURE_COLS includes days_since_last_communication as a distinct column but the Donor model cannot supply it"
+        ],
+        "suggestion": "Add days_since_last_communication as a field on the Donor dataclass and populate it from real data, or remove the feature column and document why the proxy is acceptable.",
+        "reasoning": "",
+        "summary_hash": "9af065d8"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:44:17+00:00",
+      "last_seen": "2026-04-12T08:44:17+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "review_defect",
+      "issue_kind": "review_defect",
+      "origin": "review_import",
+      "lang": "python",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "review::.::holistic::advocacy_security_posture::fr-002": {
+      "id": "review::.::holistic::advocacy_security_posture::fr-002",
+      "detector": "review",
+      "file": ".",
+      "tier": 1,
+      "confidence": "high",
+      "summary": "CORS wildcard allow_origins=['*'] on donor behavioral data API",
+      "detail": {
+        "holistic": true,
+        "dimension": "advocacy_security_posture",
+        "related_files": [
+          "src/api/server.py"
+        ],
+        "evidence": [
+          "CORSMiddleware configured with allow_origins=['*'] and allow_credentials=True",
+          "Comment in server.py says 'Tighten per environment' but no environment-specific override mechanism is present",
+          "Fundraising platform handles donor behavioral data that should not be accessible cross-origin by default"
+        ],
+        "suggestion": "Set allow_origins to an explicit list of trusted origins (e.g. dashboard hostname) in production. Remove the wildcard before deployment.",
+        "reasoning": "",
+        "summary_hash": "459660c0"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:44:17+00:00",
+      "last_seen": "2026-04-12T08:44:17+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "review_defect",
+      "issue_kind": "review_defect",
+      "origin": "review_import",
+      "lang": "python",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "review::.::holistic::initialization_coupling::fr-003": {
+      "id": "review::.::holistic::initialization_coupling::fr-003",
+      "detector": "review",
+      "file": ".",
+      "tier": 2,
+      "confidence": "medium",
+      "summary": "Module-level _embedding_model singleton creates hidden state across test runs",
+      "detail": {
+        "holistic": true,
+        "dimension": "initialization_coupling",
+        "related_files": [
+          "src/grants/matcher.py"
+        ],
+        "evidence": [
+          "_embedding_model is a module-level global set to None at import time",
+          "_get_embedding_model() mutates this global on first call with no cleanup mechanism",
+          "Tests mocking sentence_transformers must manually reset this global to avoid state leakage between runs"
+        ],
+        "suggestion": "Move the embedding model cache inside GrantMatcher as an instance attribute, or use a module-level cache with an explicit reset function for test isolation.",
+        "reasoning": "",
+        "summary_hash": "530a1f5f"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:44:17+00:00",
+      "last_seen": "2026-04-12T08:44:17+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "review_defect",
+      "issue_kind": "review_defect",
+      "origin": "review_import",
+      "lang": "python",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "review::.::holistic::dependency_health::fr-004": {
+      "id": "review::.::holistic::dependency_health::fr-004",
+      "detector": "review",
+      "file": ".",
+      "tier": 2,
+      "confidence": "medium",
+      "summary": "catboost ImportError fallback log message omits install instructions",
+      "detail": {
+        "holistic": true,
+        "dimension": "dependency_health",
+        "related_files": [
+          "src/donors/churn_predictor.py"
+        ],
+        "evidence": [
+          "logger.warning message reads only: 'catboost not installed; falling back to rules-based scoring'",
+          "No install command or documentation reference is included",
+          "pyproject.toml defines a [catboost] optional extra that would fix this, but operators are not told about it"
+        ],
+        "suggestion": "Change the warning to include the install command: 'catboost not installed; falling back to rules-based scoring. Install with: pip install open-paws-fundraising[catboost]'",
+        "reasoning": "",
+        "summary_hash": "ed6089f8"
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T08:44:17+00:00",
+      "last_seen": "2026-04-12T08:44:17+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "review_defect",
+      "issue_kind": "review_defect",
+      "origin": "review_import",
+      "lang": "python",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    }
+  },
+  "scan_coverage": {
+    "python": {
+      "status": "full",
+      "confidence": 1.0,
+      "detectors": {
+        "security": {
+          "detector": "security",
+          "status": "full",
+          "confidence": 1.0,
+          "summary": "Security coverage complete for enabled detectors.",
+          "impact": "",
+          "remediation": "",
+          "tool": "",
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "updated_at": "2026-04-12T08:46:39+00:00"
+    }
+  },
+  "score_confidence": {
+    "status": "full",
+    "confidence": 1.0,
+    "detectors": [],
+    "dimensions": []
+  },
+  "scan_metadata": {
+    "source": "scan"
+  },
+  "subjective_integrity": {
+    "status": "disabled",
+    "target_score": 85.0,
+    "matched_count": 0,
+    "matched_dimensions": [],
+    "reset_dimensions": []
+  },
+  "subjective_assessments": {
+    "naming_quality": {
+      "score": 90,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "logic_clarity": {
+      "score": 87,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "type_safety": {
+      "score": 85,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "contract_coherence": {
+      "score": 85,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "error_consistency": {
+      "score": 83,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "abstraction_fitness": {
+      "score": 85,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "ai_generated_debt": {
+      "score": 82,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "high_level_elegance": {
+      "score": 87,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "mid_level_elegance": {
+      "score": 86,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "low_level_elegance": {
+      "score": 87,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "cross_module_architecture": {
+      "score": 83,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "initialization_coupling": {
+      "score": 80,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "convention_outlier": {
+      "score": 88,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "dependency_health": {
+      "score": 82,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "test_strategy": {
+      "score": 83,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "api_surface_coherence": {
+      "score": 86,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "authorization_consistency": {
+      "score": 84,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "incomplete_migration": {
+      "score": 85,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "package_organization": {
+      "score": 89,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "design_coherence": {
+      "score": 87,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "advocacy_language_quality": {
+      "score": 92,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "advocacy_security_posture": {
+      "score": 86,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "advocacy_terminology_consistency": {
+      "score": 91,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "advocacy_data_sovereignty": {
+      "score": 93,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "advocacy_ux_inclusivity": {
+      "score": 82,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    },
+    "advocacy_tool_integration": {
+      "score": 84,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T08:44:18+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 3
+    }
+  },
+  "scan_history": [
+    {
+      "timestamp": "2026-04-12T08:31:34+00:00",
+      "lang": "python",
+      "strict_score": 18.5,
+      "verified_strict_score": 74.1,
+      "objective_score": 74.1,
+      "overall_score": 18.5,
+      "open": 48,
+      "diff_new": 48,
+      "diff_resolved": 0,
+      "ignored": 0,
+      "raw_issues": 48,
+      "suppressed_pct": 0.0,
+      "ignore_patterns": 0,
+      "subjective_integrity": {
+        "status": "pass",
+        "matched_count": 0,
+        "reset_count": 0,
+        "target_score": 85.0
+      },
+      "score_confidence": {
+        "status": "full",
+        "confidence": 1.0,
+        "detector_count": 0,
+        "dimension_count": 0
+      },
+      "dimension_scores": {
+        "Code quality": {
+          "score": 85.4,
+          "strict": 85.4
+        },
+        "Security": {
+          "score": 96.5,
+          "strict": 96.5
+        },
+        "File health": {
+          "score": 95.9,
+          "strict": 95.9
+        },
+        "Test health": {
+          "score": 46.9,
+          "strict": 46.9
+        },
+        "Advocacy security": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "Abstraction fit": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Data sovereignty": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy language": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy security (subjective)": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy terminology": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy tools": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy UX": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "AI generated debt": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "API coherence": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Auth consistency": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Contracts": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Convention drift": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Cross-module arch": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Dep health": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Design coherence": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Error consistency": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "High elegance": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Stale migration": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Init coupling": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Logic clarity": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Low elegance": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Mid elegance": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Naming quality": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Structure nav": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Test strategy": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Type safety": {
+          "score": 0.0,
+          "strict": 0.0
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-12T08:44:17+00:00",
+      "lang": "python",
+      "strict_score": 83.5,
+      "verified_strict_score": 74.1,
+      "objective_score": 74.1,
+      "overall_score": 83.5,
+      "open": 52,
+      "diff_new": 4,
+      "diff_resolved": 0,
+      "ignored": 0,
+      "raw_issues": 4,
+      "suppressed_pct": 0.0,
+      "ignore_patterns": 0,
+      "subjective_integrity": {
+        "status": "disabled",
+        "matched_count": 0,
+        "reset_count": 0,
+        "target_score": null
+      },
+      "score_confidence": {
+        "status": "full",
+        "confidence": 1.0,
+        "detector_count": 0,
+        "dimension_count": 0
+      },
+      "dimension_scores": {
+        "Code quality": {
+          "score": 85.4,
+          "strict": 85.4
+        },
+        "Security": {
+          "score": 96.5,
+          "strict": 96.5
+        },
+        "File health": {
+          "score": 95.9,
+          "strict": 95.9
+        },
+        "Test health": {
+          "score": 46.9,
+          "strict": 46.9
+        },
+        "Advocacy security": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "Abstraction fit": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Data sovereignty": {
+          "score": 93.0,
+          "strict": 93.0
+        },
+        "Advocacy language": {
+          "score": 92.0,
+          "strict": 92.0
+        },
+        "Advocacy security (subjective)": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Advocacy terminology": {
+          "score": 91.0,
+          "strict": 91.0
+        },
+        "Advocacy tools": {
+          "score": 84.0,
+          "strict": 84.0
+        },
+        "Advocacy UX": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "AI generated debt": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "API coherence": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Auth consistency": {
+          "score": 84.0,
+          "strict": 84.0
+        },
+        "Contracts": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Convention drift": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Cross-module arch": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Dep health": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Design coherence": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Error consistency": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "High elegance": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Stale migration": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Init coupling": {
+          "score": 80.0,
+          "strict": 80.0
+        },
+        "Logic clarity": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Low elegance": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Mid elegance": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Naming quality": {
+          "score": 90.0,
+          "strict": 90.0
+        },
+        "Structure nav": {
+          "score": 89.0,
+          "strict": 89.0
+        },
+        "Test strategy": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Type safety": {
+          "score": 85.0,
+          "strict": 85.0
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-12T08:45:29+00:00",
+      "lang": "python",
+      "strict_score": 83.5,
+      "verified_strict_score": 74.1,
+      "objective_score": 74.1,
+      "overall_score": 83.5,
+      "open": 52,
+      "diff_new": 0,
+      "diff_resolved": 0,
+      "ignored": 0,
+      "raw_issues": 48,
+      "suppressed_pct": 0.0,
+      "ignore_patterns": 0,
+      "subjective_integrity": {
+        "status": "disabled",
+        "matched_count": 0,
+        "reset_count": 0,
+        "target_score": 85.0
+      },
+      "score_confidence": {
+        "status": "full",
+        "confidence": 1.0,
+        "detector_count": 0,
+        "dimension_count": 0
+      },
+      "dimension_scores": {
+        "Code quality": {
+          "score": 85.4,
+          "strict": 85.4
+        },
+        "Security": {
+          "score": 96.5,
+          "strict": 96.5
+        },
+        "File health": {
+          "score": 95.9,
+          "strict": 95.9
+        },
+        "Test health": {
+          "score": 46.9,
+          "strict": 46.9
+        },
+        "Advocacy security": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "Abstraction fit": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Data sovereignty": {
+          "score": 93.0,
+          "strict": 93.0
+        },
+        "Advocacy language": {
+          "score": 92.0,
+          "strict": 92.0
+        },
+        "Advocacy security (subjective)": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Advocacy terminology": {
+          "score": 91.0,
+          "strict": 91.0
+        },
+        "Advocacy tools": {
+          "score": 84.0,
+          "strict": 84.0
+        },
+        "Advocacy UX": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "AI generated debt": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "API coherence": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Auth consistency": {
+          "score": 84.0,
+          "strict": 84.0
+        },
+        "Contracts": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Convention drift": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Cross-module arch": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Dep health": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Design coherence": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Error consistency": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "High elegance": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Stale migration": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Init coupling": {
+          "score": 80.0,
+          "strict": 80.0
+        },
+        "Logic clarity": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Low elegance": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Mid elegance": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Naming quality": {
+          "score": 90.0,
+          "strict": 90.0
+        },
+        "Structure nav": {
+          "score": 89.0,
+          "strict": 89.0
+        },
+        "Test strategy": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Type safety": {
+          "score": 85.0,
+          "strict": 85.0
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-12T08:46:39+00:00",
+      "lang": "python",
+      "strict_score": 83.5,
+      "verified_strict_score": 74.1,
+      "objective_score": 74.1,
+      "overall_score": 83.5,
+      "open": 52,
+      "diff_new": 0,
+      "diff_resolved": 0,
+      "ignored": 0,
+      "raw_issues": 48,
+      "suppressed_pct": 0.0,
+      "ignore_patterns": 0,
+      "subjective_integrity": {
+        "status": "disabled",
+        "matched_count": 0,
+        "reset_count": 0,
+        "target_score": 85.0
+      },
+      "score_confidence": {
+        "status": "full",
+        "confidence": 1.0,
+        "detector_count": 0,
+        "dimension_count": 0
+      },
+      "dimension_scores": {
+        "Code quality": {
+          "score": 85.4,
+          "strict": 85.4
+        },
+        "Security": {
+          "score": 96.5,
+          "strict": 96.5
+        },
+        "File health": {
+          "score": 95.9,
+          "strict": 95.9
+        },
+        "Test health": {
+          "score": 46.9,
+          "strict": 46.9
+        },
+        "Advocacy security": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "Abstraction fit": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Data sovereignty": {
+          "score": 93.0,
+          "strict": 93.0
+        },
+        "Advocacy language": {
+          "score": 92.0,
+          "strict": 92.0
+        },
+        "Advocacy security (subjective)": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Advocacy terminology": {
+          "score": 91.0,
+          "strict": 91.0
+        },
+        "Advocacy tools": {
+          "score": 84.0,
+          "strict": 84.0
+        },
+        "Advocacy UX": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "AI generated debt": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "API coherence": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Auth consistency": {
+          "score": 84.0,
+          "strict": 84.0
+        },
+        "Contracts": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Convention drift": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Cross-module arch": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Dep health": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Design coherence": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Error consistency": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "High elegance": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Stale migration": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Init coupling": {
+          "score": 80.0,
+          "strict": 80.0
+        },
+        "Logic clarity": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Low elegance": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Mid elegance": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Naming quality": {
+          "score": 90.0,
+          "strict": 90.0
+        },
+        "Structure nav": {
+          "score": 89.0,
+          "strict": 89.0
+        },
+        "Test strategy": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Type safety": {
+          "score": 85.0,
+          "strict": 85.0
+        }
+      }
+    }
+  ],
+  "review_cache": {
+    "detectors": {
+      "security": {
+        "version": 1,
+        "fingerprint": "7a76fe3cc147fa3d1a033aa95ade1162d97d7faa",
+        "entries": [],
+        "files_scanned": 23,
+        "coverage": null
+      }
+    },
+    "files": {},
+    "holistic": {
+      "reviewed_at": "2026-04-12T08:44:18+00:00",
+      "file_count_at_review": 23,
+      "issue_count": 4
+    }
+  },
+  "lang_capabilities": {
+    "python": {
+      "fixers": [],
+      "typecheck_cmd": ""
+    }
+  },
+  "zone_distribution": {
+    "production": 17,
+    "test": 6
+  },
+  "tool_hash": "141ace7b12db",
+  "scan_path": ".",
+  "scan_completeness": {
+    "python": "fast"
+  },
+  "potentials": {
+    "python": {
+      "unused": 17,
+      "structural": 17,
+      "flat_dirs": 8,
+      "props": 0,
+      "responsibility_cohesion": 0,
+      "single_use": 0,
+      "cycles": 17,
+      "orphaned": 17,
+      "facade": 17,
+      "coupling": 0,
+      "uncalled_functions": 8,
+      "test_coverage": 145,
+      "smells": 17,
+      "global_mutable_config": 17,
+      "security": 23,
+      "private_imports": 17,
+      "dict_keys": 17,
+      "unused_enums": 17,
+      "advocacy_language": 0,
+      "advocacy_security": 17,
+      "advocacy_tool_presence": 0,
+      "stale_wontfix": 0
+    }
+  },
+  "codebase_metrics": {
+    "python": {
+      "total_files": 23,
+      "total_loc": 3881,
+      "total_directories": 8
+    }
+  },
+  "dimension_scores": {
+    "Code quality": {
+      "score": 85.4,
+      "strict": 85.4,
+      "verified_strict_score": 85.4,
+      "checks": 127,
+      "failing": 34,
+      "tier": 3,
+      "detectors": {
+        "unused": {
+          "potential": 17,
+          "pass_rate": 0.8823529411764706,
+          "failing": 2,
+          "weighted_failures": 2.0
+        },
+        "smells": {
+          "potential": 17,
+          "pass_rate": 0.29411764705882354,
+          "failing": 26,
+          "weighted_failures": 12.0
+        },
+        "orphaned": {
+          "potential": 17,
+          "pass_rate": 0.8764705882352941,
+          "failing": 3,
+          "weighted_failures": 2.0999999999999996
+        },
+        "flat_dirs": {
+          "potential": 8,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        },
+        "facade": {
+          "potential": 17,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        },
+        "dict_keys": {
+          "potential": 17,
+          "pass_rate": 0.9,
+          "failing": 2,
+          "weighted_failures": 1.7
+        },
+        "global_mutable_config": {
+          "potential": 17,
+          "pass_rate": 0.9588235294117647,
+          "failing": 1,
+          "weighted_failures": 0.7
+        },
+        "private_imports": {
+          "potential": 17,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        }
+      }
+    },
+    "Security": {
+      "score": 96.5,
+      "strict": 96.5,
+      "verified_strict_score": 96.5,
+      "checks": 40,
+      "failing": 2,
+      "tier": 4,
+      "detectors": {
+        "cycles": {
+          "potential": 17,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        },
+        "security": {
+          "potential": 23,
+          "pass_rate": 0.9391304347826087,
+          "failing": 2,
+          "weighted_failures": 1.4
+        }
+      }
+    },
+    "File health": {
+      "score": 95.9,
+      "strict": 95.9,
+      "verified_strict_score": 95.9,
+      "checks": 17,
+      "failing": 1,
+      "tier": 3,
+      "detectors": {
+        "structural": {
+          "potential": 17,
+          "pass_rate": 0.9588235294117647,
+          "failing": 1,
+          "weighted_failures": 0.7
+        }
+      }
+    },
+    "Test health": {
+      "score": 46.9,
+      "strict": 46.9,
+      "verified_strict_score": 46.9,
+      "checks": 145,
+      "failing": 5,
+      "tier": 4,
+      "detectors": {
+        "test_coverage": {
+          "potential": 145,
+          "pass_rate": 0.4687224118853875,
+          "failing": 5,
+          "weighted_failures": 77.03525027661881
+        }
+      }
+    },
+    "Advocacy security": {
+      "score": 100.0,
+      "strict": 100.0,
+      "verified_strict_score": 100.0,
+      "checks": 17,
+      "failing": 0,
+      "tier": 2,
+      "detectors": {
+        "advocacy_security": {
+          "potential": 17,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        }
+      }
+    },
+    "Abstraction fit": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "abstraction_fitness",
+          "configured_weight": 8.0,
+          "components": []
+        }
+      }
+    },
+    "Data sovereignty": {
+      "score": 93.0,
+      "strict": 93.0,
+      "verified_strict_score": 93.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.93,
+          "failing": 0,
+          "weighted_failures": 0.7,
+          "assessment_score": 93.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_data_sovereignty",
+          "configured_weight": 6.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy language": {
+      "score": 92.0,
+      "strict": 92.0,
+      "verified_strict_score": 92.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.92,
+          "failing": 0,
+          "weighted_failures": 0.8,
+          "assessment_score": 92.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_language_quality",
+          "configured_weight": 8.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy security (subjective)": {
+      "score": 86.0,
+      "strict": 86.0,
+      "verified_strict_score": 86.0,
+      "checks": 10,
+      "failing": 1,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.86,
+          "failing": 1,
+          "weighted_failures": 1.4,
+          "assessment_score": 86.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_security_posture",
+          "configured_weight": 10.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy terminology": {
+      "score": 91.0,
+      "strict": 91.0,
+      "verified_strict_score": 91.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.91,
+          "failing": 0,
+          "weighted_failures": 0.9,
+          "assessment_score": 91.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_terminology_consistency",
+          "configured_weight": 4.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy tools": {
+      "score": 84.0,
+      "strict": 84.0,
+      "verified_strict_score": 84.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.84,
+          "failing": 0,
+          "weighted_failures": 1.6,
+          "assessment_score": 84.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_tool_integration",
+          "configured_weight": 3.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy UX": {
+      "score": 82.0,
+      "strict": 82.0,
+      "verified_strict_score": 82.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.82,
+          "failing": 0,
+          "weighted_failures": 1.8,
+          "assessment_score": 82.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_ux_inclusivity",
+          "configured_weight": 4.0,
+          "components": []
+        }
+      }
+    },
+    "AI generated debt": {
+      "score": 82.0,
+      "strict": 82.0,
+      "verified_strict_score": 82.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.82,
+          "failing": 0,
+          "weighted_failures": 1.8,
+          "assessment_score": 82.0,
+          "placeholder": false,
+          "dimension_key": "ai_generated_debt",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "API coherence": {
+      "score": 86.0,
+      "strict": 86.0,
+      "verified_strict_score": 86.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.86,
+          "failing": 0,
+          "weighted_failures": 1.4,
+          "assessment_score": 86.0,
+          "placeholder": false,
+          "dimension_key": "api_surface_coherence",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Auth consistency": {
+      "score": 84.0,
+      "strict": 84.0,
+      "verified_strict_score": 84.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.84,
+          "failing": 0,
+          "weighted_failures": 1.6,
+          "assessment_score": 84.0,
+          "placeholder": false,
+          "dimension_key": "authorization_consistency",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Contracts": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "contract_coherence",
+          "configured_weight": 12.0,
+          "components": []
+        }
+      }
+    },
+    "Convention drift": {
+      "score": 88.0,
+      "strict": 88.0,
+      "verified_strict_score": 88.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.88,
+          "failing": 0,
+          "weighted_failures": 1.2,
+          "assessment_score": 88.0,
+          "placeholder": false,
+          "dimension_key": "convention_outlier",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Cross-module arch": {
+      "score": 83.0,
+      "strict": 83.0,
+      "verified_strict_score": 83.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.83,
+          "failing": 0,
+          "weighted_failures": 1.7,
+          "assessment_score": 83.0,
+          "placeholder": false,
+          "dimension_key": "cross_module_architecture",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Dep health": {
+      "score": 82.0,
+      "strict": 82.0,
+      "verified_strict_score": 82.0,
+      "checks": 10,
+      "failing": 1,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.82,
+          "failing": 1,
+          "weighted_failures": 1.8,
+          "assessment_score": 82.0,
+          "placeholder": false,
+          "dimension_key": "dependency_health",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Design coherence": {
+      "score": 87.0,
+      "strict": 87.0,
+      "verified_strict_score": 87.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.87,
+          "failing": 0,
+          "weighted_failures": 1.3,
+          "assessment_score": 87.0,
+          "placeholder": false,
+          "dimension_key": "design_coherence",
+          "configured_weight": 10.0,
+          "components": []
+        }
+      }
+    },
+    "Error consistency": {
+      "score": 83.0,
+      "strict": 83.0,
+      "verified_strict_score": 83.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.83,
+          "failing": 0,
+          "weighted_failures": 1.7,
+          "assessment_score": 83.0,
+          "placeholder": false,
+          "dimension_key": "error_consistency",
+          "configured_weight": 3.0,
+          "components": []
+        }
+      }
+    },
+    "High elegance": {
+      "score": 87.0,
+      "strict": 87.0,
+      "verified_strict_score": 87.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.87,
+          "failing": 0,
+          "weighted_failures": 1.3,
+          "assessment_score": 87.0,
+          "placeholder": false,
+          "dimension_key": "high_level_elegance",
+          "configured_weight": 22.0,
+          "components": []
+        }
+      }
+    },
+    "Stale migration": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "incomplete_migration",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Init coupling": {
+      "score": 80.0,
+      "strict": 80.0,
+      "verified_strict_score": 80.0,
+      "checks": 10,
+      "failing": 1,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.8,
+          "failing": 1,
+          "weighted_failures": 2.0,
+          "assessment_score": 80.0,
+          "placeholder": false,
+          "dimension_key": "initialization_coupling",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Logic clarity": {
+      "score": 87.0,
+      "strict": 87.0,
+      "verified_strict_score": 87.0,
+      "checks": 10,
+      "failing": 1,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.87,
+          "failing": 1,
+          "weighted_failures": 1.3,
+          "assessment_score": 87.0,
+          "placeholder": false,
+          "dimension_key": "logic_clarity",
+          "configured_weight": 6.0,
+          "components": []
+        }
+      }
+    },
+    "Low elegance": {
+      "score": 87.0,
+      "strict": 87.0,
+      "verified_strict_score": 87.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.87,
+          "failing": 0,
+          "weighted_failures": 1.3,
+          "assessment_score": 87.0,
+          "placeholder": false,
+          "dimension_key": "low_level_elegance",
+          "configured_weight": 12.0,
+          "components": []
+        }
+      }
+    },
+    "Mid elegance": {
+      "score": 86.0,
+      "strict": 86.0,
+      "verified_strict_score": 86.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.86,
+          "failing": 0,
+          "weighted_failures": 1.4,
+          "assessment_score": 86.0,
+          "placeholder": false,
+          "dimension_key": "mid_level_elegance",
+          "configured_weight": 22.0,
+          "components": []
+        }
+      }
+    },
+    "Naming quality": {
+      "score": 90.0,
+      "strict": 90.0,
+      "verified_strict_score": 90.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.9,
+          "failing": 0,
+          "weighted_failures": 1.0,
+          "assessment_score": 90.0,
+          "placeholder": false,
+          "dimension_key": "naming_quality",
+          "configured_weight": 2.0,
+          "components": []
+        }
+      }
+    },
+    "Structure nav": {
+      "score": 89.0,
+      "strict": 89.0,
+      "verified_strict_score": 89.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.89,
+          "failing": 0,
+          "weighted_failures": 1.1,
+          "assessment_score": 89.0,
+          "placeholder": false,
+          "dimension_key": "package_organization",
+          "configured_weight": 5.0,
+          "components": []
+        }
+      }
+    },
+    "Test strategy": {
+      "score": 83.0,
+      "strict": 83.0,
+      "verified_strict_score": 83.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.83,
+          "failing": 0,
+          "weighted_failures": 1.7,
+          "assessment_score": 83.0,
+          "placeholder": false,
+          "dimension_key": "test_strategy",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Type safety": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "type_safety",
+          "configured_weight": 12.0,
+          "components": []
+        }
+      }
+    }
+  },
+  "reminder_history": {
+    "zone_classification": 3,
+    "report_scores": 3,
+    "review_issues_pending": 2,
+    "stagnant_nudge": 5,
+    "feedback_nudge": 2,
+    "review_not_run": 2
+  },
+  "assessment_import_audit": [
+    {
+      "timestamp": "2026-04-12T08:44:18+00:00",
+      "mode": "manual_override",
+      "trusted": false,
+      "reason": "manual override attested by operator",
+      "override_used": true,
+      "attested_external": false,
+      "provisional": true,
+      "provisional_count": 26,
+      "attest": "AI holistic review",
+      "import_file": "scores.json",
+      "packet_sha256": ""
+    }
+  ]
+}
